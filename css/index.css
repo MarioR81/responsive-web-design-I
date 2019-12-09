@@ -1,3 +1,136 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* universal */
+
+*{
+	max-width: 100%;
+	box-sizing: border-box;
+}
+.mainContainerBox{
+	margin: 1% 20% 5% 20%;
+	border: 1px solid red;
+	padding: 20px;
+}
 
 
+/* header menu with logo */
+.nav{
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+.nav a{
+	color: gray;
+	text-decoration: none;
+}
+
+
+/*  Header box  innovation on demad */
+
+.headerBox{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.innovationTitle{
+	font-size: 40px;
+}
+.getStarted{
+	font-size: 15px;
+	margin-top: 60px;
+	border: 1px solid gray;
+	border-radius: 3px;
+	text-align: center;
+}
+
+/*  Mid copy  */
+
+.mid{
+	display: flex;
+	justify-content: space-between;
+}
+.bottomBox{
+	height: 140px;
+	width: 47%;
+}
+
+/*   Center image   */
+
+
+
+/*   Bottom copy   */
+.bottom{
+	display: flex;
+	margin-top: 20px;
+}
+.bottomBoxLast{
+	height: 170px;
+	width: 32%;
+}
+
+/*   Contact and copyright   */
+
+.contact{
+	margin-top: 35px;
+}
+.copyright{
+	width: 100%;
+	text-align: center;
+	}
+
+
+	/*    SERVICES PAGE   */
+
+	/*   services listed in boxes    */
+	.bigBox{
+		margin-top: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.boxes{
+		/* border: 1px solid red; */
+		background-color: #DDDDDD;
+		padding: 4%;
+		scroll-padding-left: 10px;
+		flex: 0 48%;
+		margin: 1% 0 2% 0;
+	}
+	.bigBox .boxes{
+		width: 40%;
+	}
+.learnBut{
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 3px;
+	width: 30%;
+	text-align: center;
+
+}
+
+
+	/*   bottom copy with img   */
+#list{
+	list-style-type: square;
+}
+.bottomList{
+	display: flex;
+	margin-bottom: 30px;
+}
+.copyList{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.list{
+	list-style-type: square;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.list li{
+	margin: 10px;
+}
+.servies-info-img{
+	width: 50%;
+	height: 50px;
+}
