@@ -3,11 +3,12 @@
 
 *{
 	max-width: 100%;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid red;
 }
 .mainContainerBox{
 	margin: 1% 20% 5% 20%;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	padding: 20px;
 }
 
@@ -133,4 +134,29 @@
 .servies-info-img{
 	width: 50%;
 	height: 50px;
+}
+
+/*  Media Queries  */
+
+@media(max-width: 800px){
+    .innovationTitle{
+        font-size: 20px;
+    }
+    .mid{
+        height: 40vh;
+        justify-content: space-between;
+    }
+    .bottom{
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .bottomBoxLast{
+        height: 170px;
+        width: 100%;
+        text-align: center;
+    }
+    .mid h2{
+        text-align: center;
+    }
 }
