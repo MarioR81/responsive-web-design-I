@@ -1,3 +1,220 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* universal */
+
+*{
+	max-width: 100%;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    text-decoration: none;
+}
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.mainContainerBox{
+	margin: 1% 18% 5% 18%;
+	padding: 20px;
+}
+
+/* header menu with logo */
+header{
+    /*border: 5px solid blue;*/
+	height: 6vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a{
+    color: gray;
+}
+
+/*  Header box  innovation on demad */
+
+.headerBox{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.innovationTitle{
+    font-size: 40px;
+    text-align: center;
+}
+.getStarted{
+    font-size: 15px;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 83px;
+	border: 1px solid gray;
+	border-radius: 3px;
+	text-align: center;
+}
+
+/*  Mid copy  */
+
+.mid{
+	display: flex;
+	justify-content: space-between;
+}
+.bottomBox{
+	height: 27vh;
+	width: 47%;
+}
+
+/*   Center image   */
 
 
+
+/*   Bottom copy   */
+.bottom{
+	display: flex;
+	margin-top: 1vh;
+}
+.bottomBoxLast{
+	height: 35vh;
+	width: 32%;
+}
+
+/*   Contact and copyright   */
+
+.contact{
+	margin-top: 35px;
+}
+.copyright{
+	width: 100%;
+	text-align: center;
+	}
+
+
+	/*    SERVICES PAGE   */
+
+	/*   services listed in boxes    */
+	.bigBox{
+		margin-top: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.boxes{
+		/* border: 1px solid red; */
+		background-color: #DDDDDD;
+		padding: 4%;
+		scroll-padding-left: 10px;
+		flex: 0 48%;
+		margin: 1% 0 2% 0;
+	}
+	.bigBox .boxes{
+		width: 40%;
+	}
+.learnBut{
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 3px;
+	width: 30%;
+	text-align: center;
+
+}
+
+
+	/*   bottom copy with img   */
+#list{
+	list-style-type: square;
+}
+.bottomList{
+	display: flex;
+	margin-bottom: 30px;
+}
+.copyList{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.list{
+	list-style-type: square;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.list li{
+	margin: 10px;
+}
+.servies-info-img{
+	width: 50%;
+	height: 50px;
+}
+
+
+/*  Media Queries  */
+
+/*   800 pxels   */
+@media(max-width: 800px){
+    header{
+        /*border: 2px solid blue;*/
+        height: 10vh;
+        flex-direction: column-reverse;
+    }
+    header nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between
+    }
+    .codeImage{
+        display: none;
+    }
+    .mid{
+        height: 34vh;
+    }
+    .bottom{
+        height: 47vh;
+    }
+    .contact{
+        margin-top: 3vh;
+    }
+}
+
+/*   500 pxels   */
+@media(max-width: 500px){
+    header{
+        height: 33vh;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    header nav{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    nav a{
+        border-bottom: 1px solid gray;
+    }
+    nav{
+        border-top: 1px solid gray;
+    }
+    .innovationTitle{
+        font-size: 30px;
+        margin-left: 0;
+    }
+    .mid{
+        flex-direction: column;
+        height: 62vh;
+    }
+    .bottomBox{
+        width: 100%;
+        height: 44vh;
+    }
+    .bottom{
+        flex-direction: column;
+        height: 90vh;
+    }
+    .bottomBoxLast{
+        width: 100%;
+        height: 80vh;
+    }
+}
